@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>プログラミング部お題</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>リベラルアーツ大学からの挑戦状</h1>
+      <p>～お金に関する3つの質問～</p>
+      <h2>※このページは個人の製作物であり、リベ大公式ページではありません</h2>
+    </header>
+    <div class="form-wrapper">
+      <div class="container">
+        <div class="AllQuestion">
+          <form name="question" id="id_question">
+            第1問.リベシティの正式名称を答えなさい：<br>
+              <input type="text" name="firstQ" id="id_firstQ">
+            <br>
+
+            第2問.お金持ちになるために極めるべき5つの力を全てチェックしなさい：<br>
+            <label for="id_secondQ1">
+              <input type="checkbox" id="id_secondQ1" value="A1">貯める力
+            </label>
+            <label for="id_secondQ2">
+              <input type="checkbox" id="id_secondQ2" value="A2">壊す力
+            </label>
+            <label for="id_secondQ3">
+              <input type="checkbox" id="id_secondQ3" value="A3">稼ぐ力
+            </label>
+            <label for="id_secondQ4">
+              <input type="checkbox" id="id_secondQ4" value="A4">貢ぐ力
+            </label>
+            <label for="id_secondQ5">
+              <input type="checkbox" id="id_secondQ5" value="A5">増やす力
+            </label>
+            <label for="id_secondQ6">
+              <input type="checkbox" id="id_secondQ6" value="A6">使う力
+            </label>
+            <label for="id_secondQ7">
+              <input type="checkbox" id="id_secondQ7" value="A7">守る力
+            </label>
+            <label for="id_secondQ8">
+              <input type="checkbox" id="id_secondQ8" value="A8">学長を崇める力
+            </label>
+            <br>
+
+            第3問.タルムードの小話で正しいのはどれか？<br>
+              <select name="thirdQ" id="id_thirdQ">
+                <option value="B1">難破船と5人の乗客</option>
+                <option value="B2">魔法のドクロ</option>
+                <option value="B3">七匹の太った豚と七匹の飛べない豚</option>
+                <option value="B4">金の冠をかぶった燕</option>
+                <option value="B5">キツネと蒟蒻畑</option>
+                <option value="B6">正直な仕立て屋</option>
+              </select>
+            <br>
+            <button type="button" onclick="answer()">送信</button>
+          </form>
+          <script src="form.js"></script>
+
+          <div class="image" style="display: none;" id="id_image1">
+            <img src="answerImage1.png">
+            <div class="text1" id="answerText1"></div>
+          </div>
+          <div class="image" style="display: none;" id="id_image2">
+            <img src="answerImage2.png">
+            <div class="text2" id="answerText2"></div>
+          </div>
+          <div class="image" style="display: none;" id="id_image3">
+            <img src="answerImage3.png">
+            <div class="text3" id="answerText3"></div>
+          </div>
+
+        </div>
+
+        <div class="feel-wrapper">
+          <div class="container">
+            <div class="feel-heading">
+              <h2>成果物製作で経験したこと</h2>
+            </div>
+            <div class="feel">
+              <ul class="list">
+                <li class="list-item">
+                  <h3>魂を込めた点</h3>
+                  <span>+</span>
+                  <div class="FeelAnswer">
+                    <p>設問の内容　(笑いの取れる設問を考える)</p>
+                  </div>
+                </li>
+                <li class="list-item">
+                  <h3>工夫した点</h3>
+                  <span>+</span>
+                  <div class="FeelAnswer">
+                    <p>画像の吹き出し文字の表示方法　(JSによるdisplayプロパティの変更)</p>
+                  </div>
+                </li>
+                <li class="list-item">
+                  <h3>苦労した点</h3>
+                  <span>+</span>
+                  <div class="FeelAnswer">
+                    <p>第2問のチェックボックスの判別方法　(document.querySelectorAll の理解)</p>
+                  </div>
+                </li>
+                <li class="list-item">
+                  <h3>成果物製作で調べたWebサイト</h3>
+                  <span>+</span>
+                  <div class="FeelAnswer">
+                    <p>1.HTMLにJSを埋め込む方法：</p>
+                      <h5>https://proengineer.internous.co.jp/content/columnfeature/5817</h5>
+                    <p>2.送信クリックでJSを動かす方法(onclickコマンド)：</p>
+                      <h5>https://www.ipentec.com/document/javascript-exec-javascript-on-button-click</h5>
+                    <p>3.JSのイベントハンドラ(参考)：</p>
+                      <h5>https://qiita.com/sho-17/items/301f6410f05ac34183ec</h5>
+                    <p>4.JSで画像を表示する方法：</p>
+                      <h5>https://techacademy.jp/magazine/20738</h5>
+                    <p>5.JSテキストボックスの値の入手方法：</p>
+                      <h5>https://www.ipentec.com/document/javascript-get-textbox-value</h5>
+                    <p>6.チェックボックスの値を取得：</p>
+                      <h5>https://itsakura.com/js-checkbox</h5>
+                    <p>7.チェックボックスを全て取得する方法：</p>
+                      <h5>https://techacademy.jp/magazine/29964</h5>
+                    <p>8.セレクトボックスを作る：</p>
+                      <h5>https://www.tagindex.com/html_tag/form/select.html</h5>
+                    <p>9.JSでdisplayプロパティの変更：</p>
+                      <h5>https://qiita.com/gogonosmarty/items/e79bef3afe13c10d5f7a</h5>
+                    <p>10.「成果物製作で経験したこと」のアコーディオン作成：</p>
+                      <h5>Progate JQuery 学習コース 中級編</h5>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,106 @@
+header {
+  text-align: center;
+  background-color: #FA6;
+  color: white;
+}
+header h1, p {
+  margin: 0 auto;
+}
+header h2 {
+  margin: 20px auto;
+  color: black;
+  font-size: 16px;
+}
+
+.form-wrapper {
+  text-align: left;
+  margin-left: 10px;
+}
+.container {
+  width: 1170px;
+}
+
+.AllQuestion input {
+  margin-bottom: 20px;
+}
+
+.AllQuestion button {
+  margin-top: 20px;
+}
+
+.image {
+  position:relative;
+}
+.text1 {
+  position:absolute;
+  top: 305px;
+  left: 220px;
+  font-size: 40px;
+  color: red;
+}
+.text2 {
+  position:absolute;
+  top: 330px;
+  left: 200px;
+  font-size: 25px;
+  color: red;
+}
+.text3 {
+  position:absolute;
+  top: 350px;
+  left: 190px;
+  font-size: 21px;
+  color: red;
+}
+
+.list {
+  list-style: none;
+}
+
+
+/*faq wrapper*/
+.feel-wrapper {
+  background-color: #e6ecf0;
+  text-align: center;
+  padding-bottom: 20px;
+  color: #5f5d60;
+}
+
+#list {
+  width: 500px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+.list-item {
+  margin:10px;
+  border-bottom:1px solid #ccc;
+  position:relative;
+  cursor:pointer;
+  text-align: left;
+}
+
+.list-item h3 {
+  font-size: 14px;
+}
+
+.list-item span {
+  position:absolute;
+  top:0;
+  left:250px;
+  color:#ccc;
+  font-size:13px;
+}
+.FeelAnswer {
+  color:red;
+  font-size: 24px;
+  padding: 5px 10px;
+  margin-bottom: 15px;
+  display: none;
+}
+.list-item h5 {
+  font-weight: normal;
+  font-size: 20px;
+  color: black;
+}
